@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import { createApp } from 'vue'
+      import { default as App, nodes } from './example/example.md'
+      console.log(nodes)
+      const app = createApp(App)
+      app.mount('#app')
+    </script>
+  </body>
+</html>

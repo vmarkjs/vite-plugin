@@ -19,10 +19,10 @@ export default function plugin(): Plugin {
       if (!mdRegex.test(id)) {
         return
       }
-      let code = `import { h } from 'vue'\n`
+      let code = `import { h } from "vue";`
       const { text } = await renderer.render(src)
-      code += text
-      code += `\nexport default {}`
+      code += `\nexport const nodes = ${text};`
+      code += `\nexport default { render() { return nodes; } }`
       return code
     },
   }
