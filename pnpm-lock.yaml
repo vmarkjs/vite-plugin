@@ -6,13 +6,16 @@ specifiers:
   '@parcel/transformer-typescript-types': ^2.5.0
   '@swc/core': ^1.2.175
   '@swc/jest': ^0.2.20
+  '@types/hash-sum': ^1.0.0
   '@types/jest': ^27.5.0
   '@typescript-eslint/eslint-plugin': ^5.22.0
   '@typescript-eslint/parser': ^5.22.0
   '@vmark/core': ^0.1.0
+  cross-env: ^7.0.3
   eslint: ^8.14.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.0.0
+  hash-sum: ^2.0.0
   husky: ^7.0.4
   jest: ^28.0.3
   lint-staged: ^12.4.1
@@ -24,6 +27,7 @@ specifiers:
 
 dependencies:
   '@vmark/core': 0.1.0
+  hash-sum: 2.0.0
 
 devDependencies:
   '@parcel/core': 2.5.0
@@ -31,9 +35,11 @@ devDependencies:
   '@parcel/transformer-typescript-types': 2.5.0_lrile75kpx625jfni7pvwapc4a
   '@swc/core': 1.2.175
   '@swc/jest': 0.2.20_@swc+core@1.2.175
+  '@types/hash-sum': 1.0.0
   '@types/jest': 27.5.0
   '@typescript-eslint/eslint-plugin': 5.22.0_lnjlwhtxjffjmj5o7dnwvwyqxq
   '@typescript-eslint/parser': 5.22.0_t725usgvqspm5woeqpaxbfp2qu
+  cross-env: 7.0.3
   eslint: 8.14.0
   eslint-config-prettier: 8.5.0_eslint@8.14.0
   eslint-plugin-prettier: 4.0.0_mzpligoj26dazigcet37nxg2zy
@@ -1445,18 +1451,6 @@ packages:
       typescript: 4.6.4
     dev: true
 
-  /@parcel/types/2.5.0:
-    resolution: {integrity: sha512-bA0fhG6aXSGYEVo5Dt96x6lseUQHeVZVzgmiRdZsvb614Gvx22ItfaKhPmAVbM9vzbObZDHl9l9G2Ovw8Xve4g==}
-    dependencies:
-      '@parcel/cache': 2.5.0_@parcel+core@2.5.0
-      '@parcel/diagnostic': 2.5.0
-      '@parcel/fs': 2.5.0_@parcel+core@2.5.0
-      '@parcel/package-manager': 2.5.0_@parcel+core@2.5.0
-      '@parcel/source-map': 2.0.2
-      '@parcel/workers': 2.5.0_@parcel+core@2.5.0
-      utility-types: 3.10.0
-    dev: true
-
   /@parcel/types/2.5.0_@parcel+core@2.5.0:
     resolution: {integrity: sha512-bA0fhG6aXSGYEVo5Dt96x6lseUQHeVZVzgmiRdZsvb614Gvx22ItfaKhPmAVbM9vzbObZDHl9l9G2Ovw8Xve4g==}
     dependencies:
@@ -1502,7 +1496,7 @@ packages:
       '@parcel/core': 2.5.0
       '@parcel/diagnostic': 2.5.0
       '@parcel/logger': 2.5.0
-      '@parcel/types': 2.5.0
+      '@parcel/types': 2.5.0_@parcel+core@2.5.0
       '@parcel/utils': 2.5.0
       chrome-trace-event: 1.0.3
       nullthrows: 1.1.1
@@ -1721,6 +1715,10 @@ packages:
     resolution: {integrity: sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw==}
     dependencies:
       '@types/node': 17.0.31
+    dev: true
+
+  /@types/hash-sum/1.0.0:
+    resolution: {integrity: sha512-FdLBT93h3kcZ586Aee66HPCVJ6qvxVjBlDWNmxSGSbCZe9hTsjRKdSsl4y1T+3zfujxo9auykQMnFsfyHWD7wg==}
     dev: true
 
   /@types/hast/2.3.4:
@@ -2432,6 +2430,14 @@ packages:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
+    dev: true
+
+  /cross-env/7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+    dependencies:
+      cross-spawn: 7.0.3
     dev: true
 
   /cross-spawn/7.0.3:
@@ -3241,6 +3247,10 @@ packages:
     dependencies:
       function-bind: 1.1.1
     dev: true
+
+  /hash-sum/2.0.0:
+    resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
+    dev: false
 
   /hast-to-hyperscript/10.0.1:
     resolution: {integrity: sha512-dhIVGoKCQVewFi+vz3Vt567E4ejMppS1haBRL6TEmeLeJVB1i/FJIIg/e6s1Bwn0g5qtYojHEKvyGA+OZuyifw==}
