@@ -1,4 +1,4 @@
-import VMark from '.'
+import VMark from './src'
 
 export default {
   define: {
