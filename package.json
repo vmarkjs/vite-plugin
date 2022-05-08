@@ -11,7 +11,8 @@
     "lint": "eslint --fix --ext .ts,.tsx,.js,.jsx,.vue src",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 jest",
     "build": "parcel build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build && npm run test"
   },
   "dependencies": {
     "@vmark/core": "^0.1.0",
@@ -24,6 +25,8 @@
     "@parcel/core": "^2.5.0",
     "@parcel/packager-ts": "^2.5.0",
     "@parcel/transformer-typescript-types": "^2.5.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@swc/core": "^1.2.175",
     "@swc/jest": "^0.2.20",
     "@types/hash-sum": "^1.0.0",
@@ -39,6 +42,7 @@
     "lint-staged": "^12.4.1",
     "parcel": "^2.5.0",
     "prettier": "^2.6.2",
+    "semantic-release": "^19.0.2",
     "typescript": "^4.6.4",
     "vite": "^2.9.8",
     "vue": "^3.2.33"
@@ -46,6 +50,19 @@
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx,vue}": [
       "eslint --fix --max-warnings=0"
+    ]
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
     ]
   }
 }
