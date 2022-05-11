@@ -2,6 +2,10 @@
   "name": "@vmark/vite-plugin",
   "version": "0.1.1",
   "author": "Yu Yin <yxonic@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vmarkjs/vite-plugin.git"
+  },
   "type": "module",
   "source": "src/index.ts",
   "main": "dist/index.js",
