@@ -8,17 +8,6 @@ title: VMark Demo
 }
 </style>
 
-**Advertisement :)**
-
-- **[pica](https://nodeca.github.io/pica/demo/)** - high quality and fast image
-  resize in browser.
-- **[babelfish](https://github.com/nodeca/babelfish/)** - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
-
----
-
 # h1 Heading 8-)
 
 ## h2 Heading
@@ -78,7 +67,7 @@ _This is italic text_
 
 Unordered
 
-- Create a list by starting a line with \`+\`, \`-\`, or \`\*\`
+- Create a list by starting a line with `+`, `-`, or `\*`
 - Sub-lists are made by indenting 2 spaces:
   - Marker character change forces new list start:
     - Ac tristique libero volutpat at
@@ -93,7 +82,7 @@ Ordered
 3. Integer molestie lorem at massa
 
 4. You can use sequential numbers...
-5. ...or keep all the numbers as \`1.\`
+5. ...or keep all the numbers as `1.`
 
 Start numbering with offset:
 
@@ -102,7 +91,7 @@ Start numbering with offset:
 
 ## Code
 
-Inline \`code\`
+Inline `code`
 
 Indented code
 
@@ -113,19 +102,19 @@ Indented code
 
 Block code "fences"
 
-\`\`\`
+```
 Sample text here...
-\`\`\`
+```
 
 Syntax highlighting
 
-\`\`\`js
+```js
 var foo = function (bar) {
-return bar++;
-};
+  return bar++
+}
 
-console.log(foo(5));
-\`\`\`
+console.log(foo(5))
+```
 
 ## Tables
 
@@ -166,7 +155,7 @@ With a reference later in the document defining the URL location:
 
 ## Plugins
 
-The killer feature of \`markdown-it\` is very effective support of
+The killer feature of `markdown-it` is very effective support of
 [syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
 
 ### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
