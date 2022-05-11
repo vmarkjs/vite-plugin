@@ -1,3 +1,10 @@
+## [0.1.2](https://github.com/vmarkjs/vite-plugin/compare/v0.1.1...v0.1.2) (2022-05-11)
+
+
+### Bug Fixes
+
+* add repository ([2e539eb](https://github.com/vmarkjs/vite-plugin/commit/2e539eba3bd9003cc2fc9bb27fe8b7c6d5b2c5ad))
+
 ## [0.1.1](https://github.com/vmarkjs/vite-plugin/compare/v0.1.0...v0.1.1) (2022-05-11)
 
 
